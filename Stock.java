@@ -8,21 +8,13 @@ public class Stock implements StockInterface{
     private ArrayList<Investor> observers;
     public Stock(String name , double price)
     {
-        this.setName(name);
+        this.name=name;
         this.setPrice(price);
         observers=new ArrayList<Investor>();
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public void setPrice(double price) {
         this.price = price;
-    }
-
-    public String getName() {
-        return name;
     }
 
     public double getPrice() {
